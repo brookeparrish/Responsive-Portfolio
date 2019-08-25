@@ -27,6 +27,7 @@ body {
 .heading-font {
     font-family: 'Georgia', Times, 'Times New Roman', serif;
     font-size: 30px; 
+    text-align: center;
 }
 
 .heading-font-bold {
@@ -113,7 +114,8 @@ hr {
     height: 100%;
     background-position: center;
     background-repeat: repeat;
-    height: 800px;  
+    height: 800px; 
+    padding-bottom: 200px; 
 }
 
 .body-box {
@@ -141,7 +143,7 @@ hr {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     padding: 25px;
-    border: thin solid #dddddd; 
+    border: thin solid #dddddd;
 }
 
 
@@ -249,61 +251,173 @@ textarea {
     padding: 10px;
 }
 
-@media only screen and (max-width: 980px) {
-    #aboutcontent {
-        max-width: 768px;
-        height: auto;
-        overflow: auto;
+@media only screen and (min-width: 769px) {
+    .media769 {
+        height: 100%;
         margin: 0 auto;
         box-sizing: border-box;
-        top: 40%;
-        left: 38%;
+        top: 55%;
+        left: 40%;
+        width: 80%;
 
-    }
-
-    #main-portfolio {
-        width: 50%;
-        height: 100%;
-        position: relative;
-        top: 450px;
-        left: 38%;
-    }
-
-    #media-contact {
-        width: 50%;
-        height: 100%;
-        position: relative;
-        top: 450px;
-        left: 38%;
-        
     }
 
     .button {
         width: 20% !important;
     }
 
+    .float-right {
+        float: right !important;
+    }
+
+    ul {
+        background-color: transparent !important;
+        width: 38% !important;
+        margin: 0;
+    }
+
+    #name {
+        max-width: 276px;
+        margin-left: 10%;
+    }
+
+    .flex-container {
+        display: block !important;
+    }
+
+    .flex1 {
+        flex: none !important;
+    }
+
+    #aboutcontent {
+        margin-bottom: 200px;
     }
 
 
-
-
+}
 
  @media only screen and (max-width: 768px) {
-    #aboutcontent {
-        max-width: 362px;
-        height: auto;
-        overflow: auto;
-        padding: 30px;
+    .media641 {
+        height: 100%;
         margin: 0 auto;
         box-sizing: border-box;
+        top: 55%;
+        left: 40%;
+        width: 80%;      
+    }
+
+    .float-right {
+        float: none;   
+    }
+
+    ul {
+        background-color: white;
+        margin: 0;
+    }
+
+    .navbar641 {
+        width: 100%;
+        margin: auto;
 
     }
 
+    #header {
+        position: static;
+    }
+
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+
+    }
+
+    .flex1 {
+        flex: 1;
+    }
+
+    #aboutcontent {
+        margin-top: 50px;
+        margin-bottom: 200px;
+        padding-bottom: 1000px;
+    }
+
+    .button {
+        width: 20% !important;
+    }
 }
 
 @media only screen and (max-width: 640px) {
+    #header {
+        position: static;
+    }
 
+    .grid {
+        padding-top: 15px;
+        width: 95%;
+        display: grid;
+        grid-row-gap: 30px;
+        grid-template-columns: 175px;   
+    }
+
+    .flex-container {
+        display: flex !important;
+        flex-direction: column !important;
+        min-height: 100vh !important;
+        margin-bottom: 200px;
+        padding-bottom: 200px;
+    }
+
+    .flex1 {
+        flex: 1 !important;
+    }
+
+    .text-block2 {
+        top: 445px;
+
+    }
+
+    .text-block3 {
+        top: 658px;
+
+    }
+
+    .text-block4 {
+        top: 875px;
+    }
+
+    .text-block5 {
+        top: 1117px;
+    }
+
+    #lastimage {
+        margin-top: 32px;
+    }
+
+    .button {
+        width: 100% !important;
+    }
+
+    .image640 {
+        width: 100%;
+    }
+
+    #aboutcontent {
+        margin-bottom: 200px !important;
+        padding-bottom: 1650px !important;
+        margin-top: 200px;
+    
+    }
+
+    #main-portfolio {
+        padding-bottom: 1250px !important;
+        margin-bottom: 200px;
+        margin-top: 200px;
+    }
+    
 }
+
+
 
 
 
